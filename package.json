@@ -1,0 +1,32 @@
+{
+  "name": "bartekbp.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch": "next dev -p 8080",
+    "build": "next build && next export -o docs",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekbp/bartekbp.github.io.git"
+  },
+  "author": "Bartosz Polnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartekbp/bartekbp.github.io/issues"
+  },
+  "homepage": "https://github.com/bartekbp/bartekbp.github.io#readme",
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "eslint-config-next": "^13.1.6",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
