@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="125" height="75">
+  <style>
+    @font-face {
+      font-family: "Brandink Sans";
+      src: url("./fonts/Brandinksans/BrandinkSans.otf") format("opentype");
+    }
+
+    .text {
+      font-size: 90px;
+      font-weight: 600;
+      font-family: "Brandink Sans"
+    }
+  </style>
+  <text x="0" y="70" class="text">BP</text>
+</svg>

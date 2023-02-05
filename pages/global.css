@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "WorkSans";
+  src:  url("/static/fonts/worksans/WorkSans-VariableFont_wght.woff2") format('woff2-variations'),
+        url("/static/fonts/worksans/WorkSans-VariableFont_wght.ttf") format('TrueType-variations');
+}
+
+:root {
+  --light-grey: #fbfbfb;
+  --dark-grey: #aaaaaa;
+  --regular-light-grey: #f5f5f5;
+
+}
+
+body {
+  background: var(--light-grey);
+  font-family: WorkSans, sans-serif;
+}

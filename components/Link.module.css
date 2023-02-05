@@ -1,0 +1,27 @@
+.link {
+  font-size: 1.25rem;
+  letter-spacing: 0.025rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link::before {
+  background: var(--dark-grey);
+  bottom: 0;
+  content: "";
+  left: 0;
+  height: 0.1rem;
+  position: absolute;
+  transition: width 0.2s ease-in;
+  width: 0;
+  transform: translateY(calc(-100% + 0.2rem));
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.link:visited {
+   color: unset;
+ }

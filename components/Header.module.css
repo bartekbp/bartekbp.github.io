@@ -1,0 +1,28 @@
+.header {
+  align-items: center;
+  background: var(--regular-light-grey);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding: 1rem 5rem;
+  border-bottom: 0.1rem solid var(--dark-grey);
+}
+
+.name {
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logoLink {
+  display: contents;
+}
+
+.logo {
+  height: 3rem;
+}
