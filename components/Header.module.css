@@ -1,12 +1,19 @@
+@value brks: './_responsive.css';
+@value brk-medium from brks;
+
 .header {
+  --padding-sides: 2rem;
+
   align-items: center;
   background: var(--regular-light-grey);
+  border-bottom: 0.1rem solid var(--dark-grey);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
-  padding: 1rem 5rem;
-  border-bottom: 0.1rem solid var(--dark-grey);
+  padding: 1rem var(--padding-sides);
+  position: relative;
+  transition: padding 0.2s ease-in;
 }
 
 .name {
@@ -14,9 +21,40 @@
 }
 
 .nav {
+  --padding-top-bottom: 2rem;
+  --padding-sides: 1rem;
+
+  background: var(--regular-light-grey);
+  bottom: 0;
+  border-style: solid;
+  border-color: var(--dark-grey);
+  border-width: 0.1rem 0;
+
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY(100%);
+  padding: 0 var(--padding-top-bottom);
+  transition: max-height 0.2s ease-in;
+  max-height: 12rem;
+  overflow: hidden;
+
+  a:first-child {
+    margin-top: var(--padding-sides);
+  }
+
+  a:last-child {
+    margin-bottom: var(--padding-sides);
+  }
+}
+
+.hide {
+  max-height: 0;
+  border-bottom-width: 0.05rem;
 }
 
 .logoLink {
@@ -25,4 +63,31 @@
 
 .logo {
   height: 3rem;
+}
+
+
+@media only screen and (min-width: brk-medium)  {
+  .header {
+    --padding-sides: 5rem;
+  }
+
+  .hide {
+    max-height: unset;
+  }
+
+  .nav {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    transform: none;
+    overflow: visible;
+
+    --padding-sides: 0;
+    --padding-top-bottom: 0;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
 }
