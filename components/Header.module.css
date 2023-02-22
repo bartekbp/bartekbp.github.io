@@ -1,18 +1,23 @@
 @value brks: './_responsive.css';
 @value brk-medium from brks;
 
+.headerWrapper {
+  display: fixed;
+}
+
 .header {
   --padding-sides: 2rem;
 
   align-items: center;
-  background: var(--regular-light-grey);
-  border-bottom: 0.1rem solid var(--dark-grey);
+  box-shadow: 0 0 0.2rem 0 var(--dark-grey);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
   padding: 1rem var(--padding-sides);
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
   transition: padding 0.2s ease-in;
 }
 
@@ -24,12 +29,8 @@
   --padding-top-bottom: 2rem;
   --padding-sides: 1rem;
 
-  background: var(--regular-light-grey);
   bottom: 0;
-  border-style: solid;
-  border-color: var(--dark-grey);
-  border-width: 0.1rem 0;
-
+  box-shadow: 0 0 0.2rem 0 var(--dark-grey);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +55,6 @@
 
 .hide {
   max-height: 0;
-  border-bottom-width: 0.05rem;
 }
 
 .logoLink {
@@ -77,6 +77,7 @@
 
   .nav {
     border: none;
+    box-shadow: none;
     display: flex;
     flex-direction: row;
     position: static;

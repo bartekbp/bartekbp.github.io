@@ -10,7 +10,7 @@
   }
 
   span {
-    background: var(--black);
+    background: white;
     border-radius: 0.125rem;
     height: 0.2rem;
     transition: .3s cubic-bezier(0.68, -0.6, 0.32, 1.6);

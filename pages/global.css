@@ -5,13 +5,14 @@
 }
 
 :root {
-  --light-grey: #fbfbfb;
+  --light-grey: #fefefe;
   --dark-grey: #aaaaaa;
-  --regular-light-grey: #f5f5f5;
+  --regular-light-grey: #fafafa;
   --black: #000000;
 }
 
 body {
-  background: var(--light-grey);
+  background: black;
   font-family: WorkSans, sans-serif;
+  height: 5000px;
 }

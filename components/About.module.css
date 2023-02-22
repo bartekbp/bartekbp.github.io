@@ -1,0 +1,15 @@
+
+
+.about {
+  background: url("/static/background.png") no-repeat;
+  background-size: cover;
+  background-position: bottom calc(-38vw + 200px) center;
+  height: 100vh;
+}
+
+
+@media only screen and (max-width: 526px) {
+  .about {
+    background-position-y: 0;
+  }
+}

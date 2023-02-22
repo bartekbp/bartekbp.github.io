@@ -1,13 +1,16 @@
-import {ReactElement} from "react";
-import Head from 'next/head'
+import React, { ReactElement } from "react";
+import Head from "next/head";
 import Header from "../components/Header";
+import Main from "../components/Main";
 
-const Index = (): ReactElement => <>
+const Index = (): ReactElement => (
+  <>
     <Head>
       <title>Bartosz Polnik | Fullstack Developer</title>
     </Head>
     <Header />
-    <p>Hello world!</p>
-</>
+    <Main />
+  </>
+);
 
 export default Index;
