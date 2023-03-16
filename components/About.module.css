@@ -1,15 +1,80 @@
+@value brks: './_responsive.css';
+@value brk-large from brks;
 
 
-.about {
-  background: url("/static/background.png") no-repeat;
-  background-size: cover;
-  background-position: bottom calc(-38vw + 200px) center;
-  height: 100vh;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
+.rightHeader {
+  margin-top: 6rem;
+  justify-content: flex-end;
+}
 
-@media only screen and (max-width: 526px) {
-  .about {
-    background-position-y: 0;
+.container {
+  --transparency: 0.90;
+  --padding: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background:
+    linear-gradient(to bottom,
+      hsla(var(--black-values) / var(--transparency)),
+      hsla(var(--light-black-values) / var(--transparency)) 35%),
+    url("/static/background-pattern.svg");
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.text {
+  --bg-color: hsla(var(--dark-grey-values) / 0.1);
+  background-image: linear-gradient(var(--bg-color), var(--bg-color));
+}
+
+.textColumn {
+  width: 50rem;
+}
+
+.techColumn {
+  width: 40rem;
+  flex-grow: 0;
+  margin-left: auto;
+}
+
+.technology {
+  background: hsla(var(--white-values) / 1);
+}
+
+.iconContainer {
+  display: flex;
+  background: hsla(var(--white-values) / 1);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.img {
+  width: 4rem;
+  height: auto;
+
+  &Wide {
+    width: 8rem;
+  }
+}
+
+.line {
+  /*  for animation */
+}
+
+@media only screen and (min-width: brk-large)  {
+  .container {
+    flex-direction: row;
   }
 }

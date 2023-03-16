@@ -1,0 +1,38 @@
+.container {
+  --transparency: 0.90;
+  --padding: 6rem;
+
+  padding-top: var(--padding);
+  padding-bottom: 30vh;
+  background-image: linear-gradient(to bottom, hsla(var(--light-black-values) / var(--transparency)) 35%, hsla(var(--black-values) / var(--transparency))),
+              url("/static/background-pattern.svg");
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.line {
+  /* for animation */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  max-width: 50rem;
+  --bg-color: hsla(var(--dark-grey-values) / 0.1);
+  background-image: linear-gradient(var(--bg-color), var(--bg-color));
+}
+
+.iconLogoText {
+  padding: 0;
+  height: 1em;
+  width: auto;
+  aspect-ratio: 1;
+  vertical-align: text-top;
+}

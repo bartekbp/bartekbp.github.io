@@ -6,9 +6,12 @@
   width: auto;
   max-width: 100%;
   max-height: 100%;
-  transition: clip-path 0.3s ease-in;
+  filter: brightness(110%);
+  transition: filter 0.3s ease-in,
+              clip-path 0.3s ease-in;
 }
 
 .logo:hover {
   clip-path: circle(45%);
+  filter: brightness(120%);
 }

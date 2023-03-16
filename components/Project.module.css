@@ -1,0 +1,52 @@
+.tile {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  --bg-color: hsla(var(--black-values) / 0.1);
+  --radius-center: 50% 50%;
+  background-image: linear-gradient(var(--bg-color), var(--bg-color));
+  perspective: 60rem;
+  transition: transform 0.1s ease-in-out, background-position 0.1s ease-in-out;
+
+  &:hover {
+    background-image: linear-gradient(var(--bg-color), var(--bg-color)),
+    radial-gradient(circle at var(--radius-center), hsla(var(--light-orange-values) / 0.15), transparent);
+  }
+}
+
+.textContainer {
+  height: 100%;
+}
+
+.roleContainer {
+  display: flex;
+  gap: 0.5rem;
+
+  & .role {
+    font-weight: 500;
+    color: var(--white);
+  }
+}
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  & .tech {
+    border: 0.05rem solid var(--light-grey);
+    padding: 0.2rem;
+  }
+}
+
+.metaContainer {
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

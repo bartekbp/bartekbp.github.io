@@ -1,24 +1,19 @@
 @value brks: './_responsive.css';
 @value brk-medium from brks;
 
-.headerWrapper {
-  display: fixed;
-}
-
 .header {
   --padding-sides: 2rem;
-
+  background: var(--light-black);
   align-items: center;
   box-shadow: 0 0 0.2rem 0 var(--dark-grey);
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
   padding: 1rem var(--padding-sides);
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: relative;
   transition: padding 0.2s ease-in;
+  z-index: 100;
 }
 
 .name {
@@ -29,6 +24,7 @@
   --padding-top-bottom: 2rem;
   --padding-sides: 1rem;
 
+  background: var(--light-black);
   bottom: 0;
   box-shadow: 0 0 0.2rem 0 var(--dark-grey);
   display: flex;

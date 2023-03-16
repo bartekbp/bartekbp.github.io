@@ -1,0 +1,39 @@
+@value brks: './_responsive.css';
+@value brk-large from brks;
+
+.container {
+  --transparency: 0.90;
+  --padding: 6rem;
+
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background: linear-gradient(to bottom,
+    hsla(var(--light-black-values) / var(--transparency)),
+    hsla(var(--lighter-black-values) / var(--transparency)) 35%,
+    hsla(var(--lighter-black-values) / var(--transparency)) 70%,
+    hsla(var(--light-black-values) / var(--transparency))),
+    url("/static/background-pattern.svg");
+  min-height: 100vh;
+}
+
+.line {
+  /* animation only */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.projects {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: brk-large)  {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

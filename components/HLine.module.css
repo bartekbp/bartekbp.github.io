@@ -1,0 +1,7 @@
+.container {
+  background: var(--dark-grey);
+  height: 0.05rem;
+  border-radius: 0.5rem;
+  min-width: 0;
+  flex-grow: 1;
+}

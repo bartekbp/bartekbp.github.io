@@ -1,19 +1,22 @@
-.header {
+.variant-header {
   text-transform: uppercase;
-}
-
-.link {
-  font-size: 1.25rem;
-  letter-spacing: 0.025rem;
-  position: relative;
-  text-decoration: none;
-  color: white;
-  mix-blend-mode: lighten;
 
   &:hover {
     transform: scale(0.95);
     transition: transform 0.3s ease-in-out;
   }
+}
+
+.variant-text {
+  font-weight: 500;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  mix-blend-mode: lighten;
 }
 
 .link::before {
@@ -35,4 +38,10 @@
 
 .link:visited {
    color: white;
- }
+}
+
+.size-large {
+  font-size: 1.25rem;
+  letter-spacing: 0.025rem;
+}
+

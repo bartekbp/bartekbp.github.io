@@ -1,0 +1,7 @@
+.icon {
+  &:hover svg {
+    path, g {
+      fill: var(--regular-grey) !important;
+    }
+  }
+}

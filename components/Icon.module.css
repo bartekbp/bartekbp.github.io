@@ -1,0 +1,15 @@
+.icon {
+  display: inline-block;
+  height: auto;
+  width: 1.3rem;
+  padding: 0.2rem;
+
+  svg {
+    aspect-ratio: 1;
+    max-width: 100%;
+
+    path, g {
+      fill: var(--white) !important;
+    }
+  }
+}
