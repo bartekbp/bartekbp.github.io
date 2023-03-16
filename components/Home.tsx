@@ -72,7 +72,7 @@ const Home = (): ReactElement => {
     <ResponsiveColumn className={styles.container}>
       <Stack spacing={"1rem"}>
         <TextBody variant={"h2"} className={styles.title}>
-          <SplitWords wordClassName={styles.words}>Hi! I'm Bartek Polnik</SplitWords>
+          <SplitWords wordClassName={styles.words}>Hi! I&apos;m Bartek Polnik</SplitWords>
         </TextBody>
         <TextBody variant={"body"} className={styles.text}>
           <span>A full stack developer passionate about building delightful products for the web. Now at</span>{" "}

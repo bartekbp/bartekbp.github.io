@@ -68,14 +68,14 @@ const About = () => {
         <Tile className={styles.text}>
           <Stack spacing={"1rem"}>
             <TextBody variant={"body"}>
-              Hi! It's great to meet you! My name is <TextBody variant={"emph"}>Bartek</TextBody> and I'm a{" "}
+              Hi! It&apos;s great to meet you! My name is <TextBody variant={"emph"}>Bartek</TextBody> and I&apos;m a{" "}
               <TextBody variant={"emph"}>full-stack developer</TextBody> with over{" "}
               <TextBody variant={"emph"}>10 years</TextBody> of professional experience.
             </TextBody>
             <TextBody variant={"body"}>
-              I've been drawn to computers since I remember. I always loved them for their interactiveness and unlimited
-              possibilities. When I was <TextBody variant={"emph"}>15 years old</TextBody>, I found a book about
-              Macromedia Flesh and created <TextBody variant={"emph"}>my first animations</TextBody>.
+              I&apos;ve been drawn to computers since I remember. I always loved them for their interactiveness and
+              unlimited possibilities. When I was <TextBody variant={"emph"}>15 years old</TextBody>, I found a book
+              about Macromedia Flesh and created <TextBody variant={"emph"}>my first animations</TextBody>.
             </TextBody>
             <TextBody variant={"body"}>
               Fast forward to the present, I leant programming of frontend, backend, infrastructure and had a pleasure
@@ -86,7 +86,7 @@ const About = () => {
               <Link href={"https://genieai.tech/"} variant={"text"}>
                 Genie
               </Link>
-              , I'm helping to build a system augmenting people to make better investment decision.
+              , I&apos;m helping to build a system augmenting people to make better investment decision.
             </TextBody>
           </Stack>
         </Tile>

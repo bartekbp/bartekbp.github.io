@@ -45,7 +45,7 @@ const Projects = () => {
       <Stack spacing={"2rem"}>
         <TextBody variant={"h3"} id={"projects"} className={styles.header}>
           <Link href={"#projects"} variant={"text"}>
-            Things I've built
+            Things I&apos;ve built
           </Link>
           <HLine className={styles.line} />
         </TextBody>

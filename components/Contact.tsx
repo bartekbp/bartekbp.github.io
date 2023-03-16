@@ -48,7 +48,7 @@ const Contact = () => {
           <Tile className={styles.message}>
             <Stack spacing={"1rem"}>
               <TextBody variant={"body"}>
-                Although, I'm not currently looking for any offers, you can always reach me via email{" "}
+                Although, I&apos;m not currently looking for any offers, you can always reach me via email{" "}
                 <Link variant={"text"} href={"mailto:bartoszpolnik@gmail.com"}>
                   bartoszpolnik@gmail.com
                 </Link>{" "}
@@ -59,7 +59,7 @@ const Contact = () => {
                 .
               </TextBody>
               <TextBody variant={"body"}>
-                If you would like to see more of my contributions, don't hesitate to visit my Github Profile{" "}
+                If you would like to see more of my contributions, don&apos;t hesitate to visit my Github Profile{" "}
                 <GithubIconLink href={"https://github.com/bartekbp"} className={styles.iconLogoText} />.
               </TextBody>
             </Stack>

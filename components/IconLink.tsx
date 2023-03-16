@@ -12,7 +12,7 @@ const IconLink = ({
   className?: string;
 }): ReactElement => {
   return (
-    <a href={href} target={"_blank"} className={styles.icon}>
+    <a href={href} target={"_blank"} rel="noreferrer" className={styles.icon}>
       <Icon className={className}>{children}</Icon>
     </a>
   );
