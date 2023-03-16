@@ -58,7 +58,7 @@ const About = () => {
   const headerSpacing = "1rem";
   return (
     <ResponsiveColumn className={styles.container}>
-      <Stack spacing={headerSpacing} className={styles.textColumn}>
+      <Stack spacing={headerSpacing} className={clsx(styles.textColumn, styles.maxWidth)}>
         <TextBody variant={"h3"} id={"about"} className={styles.header}>
           <Link href={"#about"} variant={"text"}>
             About Me
@@ -91,7 +91,7 @@ const About = () => {
           </Stack>
         </Tile>
       </Stack>
-      <Stack spacing={headerSpacing} className={styles.techColumn}>
+      <Stack spacing={headerSpacing} className={clsx(styles.techColumn, styles.maxWidth)}>
         <TextBody variant={"h3"} className={clsx(styles.header, styles.rightHeader)}>
           <HLine maxWidth={"7rem"} className={styles.line} />
           <TextBody variant={"emph"}>My Skills</TextBody>

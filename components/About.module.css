@@ -73,6 +73,10 @@
   /*  for animation */
 }
 
+.maxWidth {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: brk-large)  {
   .container {
     flex-direction: row;
