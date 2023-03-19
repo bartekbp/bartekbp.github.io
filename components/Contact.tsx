@@ -48,9 +48,14 @@ const Contact = () => {
           <Tile className={styles.message}>
             <Stack spacing={"1rem"}>
               <TextBody variant={"body"}>
-                Although, I&apos;m not currently looking for any offers, you can always reach me via email{" "}
-                <Link variant={"text"} href={"mailto:bartoszpolnik@gmail.com"}>
-                  bartoszpolnik@gmail.com
+                Although, I&apos;m not currently looking for any offers, you can always reach me via {" "}
+                <Link variant={"text"} onClick={e => {
+                  e.stopPropagation();
+                  e.preventDefault();
+
+                  window.open(`mailto:bartoszpolnik@gmail.com`, '_blank');
+                }}>
+                  email
                 </Link>{" "}
                 or message me at Linkedin{" "}
                 <IconLink href={"https://www.linkedin.com/in/bartosz-polnik-5b702181/"} className={styles.iconLogoText}>

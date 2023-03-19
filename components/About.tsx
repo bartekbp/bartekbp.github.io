@@ -9,10 +9,82 @@ import Stack from "./Stack";
 import gsap from "./initializedGsap";
 import clsx from "clsx";
 import Tile from "./Tile";
+import sortBy from 'lodash/fp/sortBy';
 
 const Img = ({ alt, src, className }: { src: string; alt: string; className?: string }): ReactElement => {
   return <img src={src} alt={alt} className={clsx(styles.img, className)} title={alt} />;
 };
+
+interface Tile {
+  name: string;
+  icon: string;
+  className?: string;
+}
+
+const tiles: Tile[] = sortBy(tile => tile.name, [
+  {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg',
+    name: 'AWS',
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg',
+    name: 'Typescript'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+    name: 'Javascript'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg',
+    name: 'NodeJS'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+    name: 'React'
+  }, {
+    icon: 'https://raw.githubusercontent.com/webpack/media/master/logo/icon.png',
+    name: 'Webpack'
+  }, {
+    icon: 'https://openjsf.org/wp-content/uploads/sites/84/2022/05/jest.svg',
+    name: 'Jest'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/262px-Java_programming_language_logo.svg.png',
+    name: 'Java',
+    className: styles.imgNarrow
+  }, {
+    icon: 'https://avatars.githubusercontent.com/u/1483254?s=280&v=4',
+    name: 'MyBatis'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/2560px-Spring_Framework_Logo_2018.svg.png',
+    name: 'Spring',
+    className: styles.imgWide,
+  }, {
+    icon: 'https://raw.githubusercontent.com/spockframework/spock-logo/main/Spock-Brand-Materials/logos/primary/spock-main-logo.png',
+    name: 'Spock'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
+    name: 'Python'
+  }, {
+    icon: 'https://www.sqlalchemy.org/img/sqla_logo.png',
+    name: 'SQLAlchemy',
+    className: styles.imgWide
+  }, {
+    icon: 'https://avatars.githubusercontent.com/u/48071860?s=200&v=4',
+    name: 'Strawberry GraphQL'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png',
+    name: 'SQL'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Erlang_logo.svg',
+    name: 'Erlang'
+  }, {
+    icon: 'https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg',
+    name: 'Terraform'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg',
+    name: 'PostgreSQL'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg',
+    name: 'Elasticsearch',
+    className: styles.imgWide
+  }
+])
 
 const About = () => {
   useEffect(() => {
@@ -78,15 +150,14 @@ const About = () => {
               about Macromedia Flesh and created <TextBody variant={"emph"}>my first animations</TextBody>.
             </TextBody>
             <TextBody variant={"body"}>
-              Fast forward to the present, I leant programming of frontend, backend, infrastructure and had a pleasure
+              Since then, I graduated CS at <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"}>AGH UST</Link>, learnt how to effectively build features involving frontend, backend, devops and had a pleasure
               of <TextBody variant={"emph"}>working with</TextBody> amazing people in{" "}
               <TextBody variant={"emph"}>startups</TextBody>, a <TextBody variant={"emph"}>marking agency</TextBody>,{" "}
               <TextBody variant={"emph"}>corporations</TextBody> and{" "}
               <TextBody variant={"emph"}>open source community</TextBody>. Now at{" "}
               <Link href={"https://genieai.tech/"} variant={"text"}>
                 Genie
-              </Link>
-              , I&apos;m helping to build a system augmenting people to make better investment decision.
+              </Link>, I&apos;m helping to build a system augmenting people to make better investment decision.
             </TextBody>
           </Stack>
         </Tile>
@@ -98,42 +169,12 @@ const About = () => {
         </TextBody>
         <Tile className={clsx(styles.technology)}>
           <div className={styles.iconContainer}>
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript" />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript" />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="NodeJS" />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
-            <Img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon.png" alt="Webpack" />
-            <Img src="https://openjsf.org/wp-content/uploads/sites/84/2022/05/jest.svg" alt="Jest" />
-            <Img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/262px-Java_programming_language_logo.svg.png"
-              alt="Java"
-            />
-            <Img src="https://avatars.githubusercontent.com/u/1483254?s=280&v=4" alt="MyBatis" />
-            <Img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/2560px-Spring_Framework_Logo_2018.svg.png"
-              alt="Spring"
-              className={styles.imgWide}
-            />
-            <Img
-              src="https://raw.githubusercontent.com/spockframework/spock-logo/main/Spock-Brand-Materials/logos/primary/spock-main-logo.png"
-              alt="Spock"
-            />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" />
-            <Img src="https://www.sqlalchemy.org/img/sqla_logo.png" alt="SQLAlchemy" className={styles.imgWide} />
-            <Img src="https://avatars.githubusercontent.com/u/48071860?s=200&v=4" alt="Strawberry GraphQL" />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Erlang_logo.svg" alt="Erlang" />
-            <Img
-              src="https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg"
-              alt="Terraform"
-            />
-            <Img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" />
-            <Img
-              src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg"
-              alt="Elasticsearch"
-              className={styles.imgWide}
-            />
+            {
+              tiles.map(tile => <div className={styles.tile} key={tile.name}>
+                <Img src={tile.icon} alt='' className={clsx(styles.icon, tile.className)} />
+                <span className={styles.caption}>{tile.name}</span>
+              </div>)
+            }
           </div>
         </Tile>
       </Stack>

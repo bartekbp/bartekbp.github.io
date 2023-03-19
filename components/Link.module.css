@@ -12,7 +12,8 @@
 }
 
 .link {
-  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
   position: relative;
   text-decoration: none;
   color: white;

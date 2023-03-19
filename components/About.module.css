@@ -52,17 +52,38 @@
 }
 
 .iconContainer {
-  display: flex;
   background: hsla(var(--white-values) / 1);
+  color: var(--light-black);
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-around;
   gap: 1rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+
+  & .icon {
+    margin: auto 0;
+  }
+
+  & .caption {
+    justify-self: flex-end;
+  }
 }
 
 .img {
   width: 4rem;
   height: auto;
+
+  &Narrow {
+    width: 3rem;
+  }
 
   &Wide {
     width: 8rem;

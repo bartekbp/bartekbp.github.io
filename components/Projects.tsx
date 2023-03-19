@@ -57,11 +57,10 @@ const Projects = () => {
                 <ExternalIconLink href={"https://genieai.tech/"} />
               </>
             }
-            role={"Senior Fullstack Developer"}
+            role={"Senior Fullstack Developer, Founding Engineer"}
             technology={["ReactJS", "Strawberry GraphQL", "Python", "SQLAlchemy", "PostgreSQL", "AWS"]}
           >
-            Portfolio management system with batteries included. Supporting cryptocurrencies, futures. Allowing you to
-            import portfolio, analyze it and optimize future investments. Providing builtin forecasts and alerting.
+            Portfolio management system supported by a virtual assistant. Helps users to analyze their investment portfolios, stress test them, and improve their KPIs.
           </Project>
           <Project
             title={"Nextbank CBS"}
@@ -73,8 +72,9 @@ const Projects = () => {
             role={"TechLead Fullstack Developer"}
             technology={["ReactJS", "Spring", "Java", "MyBatis", "PostgreSQL", "AWS"]}
           >
-            Next-gen cloud based core banking system. Fully packaged solution allowing you to run a modern bank. With
-            instant payments, wire transfers, checks, atm, mobile application and reporting.
+            Next-gen cloud based core banking system. Fully featured solution allowing you to run a modern bank. With
+            instant payments, wire transfers, checks, ATM, mobile app integration and reporting.
+            Trusted by dozens of small and medium banks in developing countries.
           </Project>
           <Project
             title={"Ferrero Rocher"}
@@ -86,27 +86,28 @@ const Projects = () => {
             role={"TechLead Fullstack Developer"}
             technology={["Liferay"]}
           >
-            Master version of the website implemented in a content management system. Allowing for different subpages
-            per language and embedding ad-hoc content.
+            Developed a highly optimized website for the best seller sweets from a leading candy producer in Europe.
+            Complex animations, localization and content varying per country.
           </Project>
           <Project title={"ADS"} role={"Fullstack Developer"} technology={["Spring", "Angular", "Webpack", "HBase"]}>
-            Application dynamically injecting advertisements based on a set of customizable rules for corporate client.
+            Framework for dynamically injecting advertisements based on a set of customizable rules for a corporate client.
           </Project>
           <Project
             title={"Search"}
             role={"Fullstack Developer Associate"}
             technology={["Sprint", "ReactJS", "RequireJS", "ElasticSearch", "Hibernate", "Retrofit", "RxJava", "Grunt"]}
           >
-            Ultra fast search engine. Populated with domains, accounts, applications and documents. Tuned for relevance
-            and supporting fuzzy searching.
+            An ultra fast search engine populated with heterogeneous data, such as internet domains,
+            user accounts, content of internal applications and documents. Tuned for relevance
+            and supporting inexact matches.
           </Project>
           <Project
             title={"VFS"}
             role={"Erlang Developer"}
             technology={["Erlang", "Ranch", "Mnesia", "Gen_Server_Mock", "Rebar"]}
           >
-            Virtual file system abstracting location of files, supporting custom rules for transfering content. Bultin
-            with efficiency of data transfer and scalability in mind.
+            A distributed virtual file system for high performance computing environments. Built to maximize the speed of file transfer, provide location transparency,
+            and abstract away differences between file systems installed on dozens of computing nodes across different data centers.
           </Project>
           <Project
             title={"Typescript-Checkstyle"}
@@ -125,8 +126,7 @@ const Projects = () => {
               </>
             }
           >
-            My own tool for reporting errors from typescript compiler to checkstyle format. It makes it possible to
-            collect typescript errors from codebase and publish using other tools to Bitbucket or Github. Trusted by{" "}
+            My own open source contribution. The tool collects errors from Typescript and makes them available through integrations in Bitbucket and Github. Trusted by{" "}
             <Link href={"https://automattic.com/"} variant={"text"}>
               Automattic
             </Link>
