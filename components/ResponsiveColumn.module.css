@@ -1,12 +1,18 @@
 .container {
-  --resonsive-padding: 10rem;
+  --resonsive-padding: 8rem;
   padding-left: var(--resonsive-padding);
   padding-right: var(--resonsive-padding);
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .container {
     --resonsive-padding: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    --resonsive-padding: 3rem;
   }
 }

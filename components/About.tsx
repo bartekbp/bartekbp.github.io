@@ -41,7 +41,7 @@ const tiles: Tile[] = sortBy(tile => tile.name, [
     icon: 'https://raw.githubusercontent.com/webpack/media/master/logo/icon.png',
     name: 'Webpack'
   }, {
-    icon: 'https://openjsf.org/wp-content/uploads/sites/84/2022/05/jest.svg',
+    icon: 'https://www.svgrepo.com/download/353930/jest.svg',
     name: 'Jest'
   }, {
     icon: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/262px-Java_programming_language_logo.svg.png',

@@ -71,6 +71,14 @@ const Home = (): ReactElement => {
   return (
     <ResponsiveColumn className={styles.container}>
       <Stack spacing={"1rem"}>
+        <div
+          className={styles.imgWrapper}
+          style={{
+            transform: `translateX(${moveX}px) translateY(${moveY}px)`,
+          }}
+        >
+          <PersonIcon />
+        </div>
         <TextBody variant={"h2"} className={styles.title}>
           <SplitWords wordClassName={styles.words}>Hi! I&apos;m Bartek Polnik</SplitWords>
         </TextBody>
@@ -81,14 +89,6 @@ const Home = (): ReactElement => {
           </Link>
           <span>, making robo advisor for crypto investing a reality.</span>
         </TextBody>
-        <div
-          className={styles.imgWrapper}
-          style={{
-            transform: `translateX(${moveX}px) translateY(${moveY}px)`,
-          }}
-        >
-          <PersonIcon />
-        </div>
         <ScrollIcon className={styles.scrollIcon} startAnimation={completedAnimation} />
       </Stack>
     </ResponsiveColumn>
