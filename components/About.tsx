@@ -149,8 +149,8 @@ const About = () => {
               learnt how to effectively build features involving <TextBody variant={"emph"}>frontend</TextBody>, <TextBody variant={"emph"}>backend</TextBody> and <TextBody variant={"emph"}>devops</TextBody>.
             </TextBody>
             <TextBody variant={"body"}>
-              During my career, I build on portfolio management system, core banking system, multilingual
-              cms websites, search engines and virtual file system. I had a pleasure to
+              During my career, I built a portfolio management system, a core banking system, multilingual
+              cms websites, search engines and a virtual file system. I had a pleasure to
               <TextBody variant={"emph"}> work with</TextBody> amazing people in{" "}
               <TextBody variant={"emph"}>startups</TextBody>, a <TextBody variant={"emph"}>marking agency</TextBody>,{" "}
               <TextBody variant={"emph"}>corporations</TextBody> and{" "}
