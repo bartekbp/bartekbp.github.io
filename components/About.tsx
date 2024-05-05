@@ -145,16 +145,19 @@ const About = () => {
               <TextBody variant={"emph"}>10 years</TextBody> of professional experience.
             </TextBody>
             <TextBody variant={"body"}>
-              I&apos;ve been drawn to computers since I remember. I always loved them for their interactiveness and
-              unlimited possibilities. When I was <TextBody variant={"emph"}>15 years old</TextBody>, I found a book
-              about Macromedia Flesh and created <TextBody variant={"emph"}>my first animations</TextBody>.
+              I graduated Computer Science at <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"}>AGH UST</Link> and
+              learnt how to effectively build features involving <TextBody variant={"emph"}>frontend</TextBody>, <TextBody variant={"emph"}>backend</TextBody> and <TextBody variant={"emph"}>devops</TextBody>.
             </TextBody>
             <TextBody variant={"body"}>
-              Since then, I graduated CS at <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"}>AGH UST</Link>, learnt how to effectively build features involving frontend, backend, devops and had a pleasure
-              of <TextBody variant={"emph"}>working with</TextBody> amazing people in{" "}
+              During my career, I build on portfolio management system, core banking system, multilingual
+              cms websites, search engines and virtual file system. I had a pleasure to
+              <TextBody variant={"emph"}> work with</TextBody> amazing people in{" "}
               <TextBody variant={"emph"}>startups</TextBody>, a <TextBody variant={"emph"}>marking agency</TextBody>,{" "}
               <TextBody variant={"emph"}>corporations</TextBody> and{" "}
-              <TextBody variant={"emph"}>open source community</TextBody>. Now at{" "}
+              <TextBody variant={"emph"}>open source community</TextBody>.
+            </TextBody>
+            <TextBody variant={"body"}>
+              Now at{" "}
               <Link href={"https://genieai.tech/"} variant={"text"}>
                 Genie
               </Link>, I&apos;m helping to build a system augmenting people to make better investment decision.
