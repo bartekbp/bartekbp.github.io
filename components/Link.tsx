@@ -7,6 +7,7 @@ export const Link = (props: {
   href?: string;
   children: ReactNode;
   className?: string;
+  wrap?: boolean;
   hover?: boolean;
   variant?: "text" | "header";
   size?: "large" | "normal";
@@ -27,6 +28,7 @@ export const Link = (props: {
     className={clsx(
       styles.link,
       props.className,
+      props.wrap && styles.wrap,
       props.hover && styles.hover,
       styles[`size-${props.size ?? "normal"}`],
       styles[`variant-${props.variant ?? "text"}`]

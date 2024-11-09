@@ -21,70 +21,37 @@ interface Tile {
   className?: string;
 }
 
-const tiles: Tile[] = sortBy(tile => tile.name, [
+const tiles: Tile[] = [
   {
     icon: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg',
     name: 'AWS',
   }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg',
-    name: 'Typescript'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
-    name: 'Javascript'
-  }, {
     icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg',
     name: 'NodeJS'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
-    name: 'React'
-  }, {
-    icon: 'https://raw.githubusercontent.com/webpack/media/master/logo/icon.png',
-    name: 'Webpack'
-  }, {
-    icon: 'https://www.svgrepo.com/download/353930/jest.svg',
-    name: 'Jest'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/262px-Java_programming_language_logo.svg.png',
-    name: 'Java',
-    className: styles.imgNarrow
-  }, {
-    icon: 'https://avatars.githubusercontent.com/u/1483254?s=280&v=4',
-    name: 'MyBatis'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/2560px-Spring_Framework_Logo_2018.svg.png',
-    name: 'Spring',
-    className: styles.imgWide,
-  }, {
-    icon: 'https://raw.githubusercontent.com/spockframework/spock-logo/main/Spock-Brand-Materials/logos/primary/spock-main-logo.png',
-    name: 'Spock'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
-    name: 'Python'
-  }, {
-    icon: 'https://www.sqlalchemy.org/img/sqla_logo.png',
-    name: 'SQLAlchemy',
-    className: styles.imgWide
-  }, {
-    icon: 'https://avatars.githubusercontent.com/u/48071860?s=200&v=4',
-    name: 'Strawberry GraphQL'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png',
-    name: 'SQL'
-  }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Erlang_logo.svg',
-    name: 'Erlang'
-  }, {
-    icon: 'https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg',
-    name: 'Terraform'
   }, {
     icon: 'https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg',
     name: 'PostgreSQL'
   }, {
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg',
-    name: 'Elasticsearch',
+    icon: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/262px-Java_programming_language_logo.svg.png',
+    name: 'Java',
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+    name: 'React'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg',
+    name: 'Typescript'
+  }, {
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1200px-Vitejs-logo.svg.png',
+    name: 'Vite'
+  }, {
+    icon: 'https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg',
+    name: 'Terraform'
+  }, {
+    icon: 'https://opentelemetry.io/img/logos/opentelemetry-horizontal-color.svg',
+    name: 'Open telemetry',
     className: styles.imgWide
   }
-])
+]
 
 const About = () => {
   useEffect(() => {
@@ -140,27 +107,19 @@ const About = () => {
         <Tile className={styles.text}>
           <Stack spacing={"1rem"}>
             <TextBody variant={"body"}>
-              Hi! It&apos;s great to meet you! My name is <TextBody variant={"emph"}>Bartek</TextBody> and I&apos;m a{" "}
-              <TextBody variant={"emph"}>full-stack developer</TextBody> with over{" "}
-              <TextBody variant={"emph"}>10 years</TextBody> of professional experience.
+              Hello! I&apos;m <TextBody variant={"emph"}>Bartek</TextBody>, a full-stack developer with over a <TextBody variant={"emph"}>decade</TextBody> of experience in the industry
             </TextBody>
-            <TextBody variant={"body"}>
-              I graduated Computer Science at <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"}>AGH UST</Link> and
-              learnt how to effectively build features involving <TextBody variant={"emph"}>frontend</TextBody>, <TextBody variant={"emph"}>backend</TextBody> and <TextBody variant={"emph"}>devops</TextBody>.
+            <TextBody variant={'body'}>
+              I hold a degree in Computer Science from <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"} wrap>AGH University of Science and Technology</Link>, where I
+              developed a strong foundation in building robust solutions across frontend, backend, and devops domains
             </TextBody>
-            <TextBody variant={"body"}>
-              During my career, I built a portfolio management system, a core banking system, multilingual
-              cms websites, search engines and a virtual file system. I had a pleasure to
-              <TextBody variant={"emph"}> work with</TextBody> amazing people in{" "}
-              <TextBody variant={"emph"}>startups</TextBody>, a <TextBody variant={"emph"}>marking agency</TextBody>,{" "}
-              <TextBody variant={"emph"}>corporations</TextBody> and{" "}
-              <TextBody variant={"emph"}>open source community</TextBody>.
+            <TextBody variant={'body'}>
+              Throughout my career, I&apos;ve successfully delivered projects such as portfolio management system, core banking platform, multilingual CMS websites,
+              search engines, and virtual file system.
+              I&apos;ve had the privilege of collaborating with talented teams across startups, marketing agencies, large organizations, and the open-source community
             </TextBody>
-            <TextBody variant={"body"}>
-              Now at{" "}
-              <Link href={"https://genieai.tech/"} variant={"text"}>
-                Genie
-              </Link>, I&apos;m helping to build a system augmenting people to make better investment decision.
+            <TextBody variant={'body'}>
+              At <Link href={"https://genieai.tech/"} variant={"text"}>Genie</Link>, I&apos;m focused on developing a system that enhances decision-making for crypto investors
             </TextBody>
           </Stack>
         </Tile>

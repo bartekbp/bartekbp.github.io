@@ -6,8 +6,8 @@ import styles from "./Project.module.css";
 import useMouse from "@react-hook/mouse-position";
 import Tile from "./Tile";
 
-const maxRotationY = 8;
-const maxRotationX = 4;
+const maxRotationY = 12;
+const maxRotationX = 6;
 
 const Project = ({
   title,
@@ -38,7 +38,7 @@ const Project = ({
       className={styles.container}
       ref={mouseRoot}
       style={{
-        transform: `rotateY(${rotationY}deg) rotateX(${rotationX}deg)`,
+        transform: `scale(${mouse.isOver ? '1.02' : '1'}) rotateY(${rotationY}deg) rotateX(${rotationX}deg)`,
       }}
     >
       <Tile className={styles.tile}>

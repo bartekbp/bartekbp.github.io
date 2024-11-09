@@ -57,10 +57,10 @@ const Projects = () => {
                 <ExternalIconLink href={"https://genieai.tech/"} />
               </>
             }
-            role={"Senior Fullstack Developer, Founding Engineer"}
-            technology={["ReactJS", "Strawberry GraphQL", "Python", "SQLAlchemy", "PostgreSQL", "AWS"]}
+            role={"TechLead Fullstack Developer"}
+            technology={["ReactJS", "NodeJS", "Strawberry GraphQL", "Python", "SQLAlchemy", "PostgreSQL", "AWS"]}
           >
-            Portfolio management system supported by a virtual assistant. Helps users to analyze their investment portfolios, stress test them, and improve their KPIs.
+            Crypto portfolio management system supported by a virtual assistant. Helps users to analyze their investment portfolios, stress test them, and improve their KPIs.
           </Project>
           <Project
             title={"Nextbank CBS"}
@@ -87,10 +87,10 @@ const Projects = () => {
             technology={["Liferay"]}
           >
             Developed a highly optimized website for the best seller sweets from a leading candy producer in Europe.
-            Complex animations, localization and content varying per country.
+            Complex animations, localization and content varying per country
           </Project>
           <Project title={"ADS"} role={"Fullstack Developer"} technology={["Spring", "Angular", "Webpack", "HBase"]}>
-            Framework for dynamically injecting advertisements based on a set of customizable rules for a corporate client.
+            Framework for dynamically injecting advertisements based on a set of customizable rules
           </Project>
           <Project
             title={"Search"}
@@ -99,16 +99,16 @@ const Projects = () => {
           >
             An ultra fast search engine populated with heterogeneous data, such as internet domains,
             user accounts, content of internal applications and documents. Tuned for relevance
-            and supporting inexact matches.
+            and supporting inexact matches
           </Project>
-          <Project
-            title={"VFS"}
-            role={"Erlang Developer"}
-            technology={["Erlang", "Ranch", "Mnesia", "Gen_Server_Mock", "Rebar"]}
-          >
-            A distributed virtual file system for high performance computing environments. Built to maximize the speed of file transfer, provide location transparency,
-            and abstract away differences between file systems installed on dozens of computing nodes across different data centers.
-          </Project>
+          {/*<Project*/}
+          {/*  title={"VFS"}*/}
+          {/*  role={"Erlang Developer"}*/}
+          {/*  technology={["Erlang", "Ranch", "Mnesia", "Gen_Server_Mock", "Rebar"]}*/}
+          {/*>*/}
+          {/*  A distributed virtual file system for high performance computing environments. Built to maximize the speed of file transfer, provide location transparency,*/}
+          {/*  and abstract away differences between file systems installed on dozens of computing nodes across different data centers.*/}
+          {/*</Project>*/}
           <Project
             title={"Typescript-Checkstyle"}
             role={"Author, Core Maintainer"}
@@ -116,7 +116,7 @@ const Projects = () => {
             notes={
               <>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  4k
+                  2k
                   <Icon>
                     <DownloadIcon />
                   </Icon>
@@ -126,14 +126,7 @@ const Projects = () => {
               </>
             }
           >
-            My own open source contribution. The tool collects errors from Typescript and makes them available through integrations in Bitbucket and Github. Trusted by{" "}
-            <Link href={"https://automattic.com/"} variant={"text"}>
-              Automattic
-            </Link>
-            , the team behind{" "}
-            <Link href={"https://wordpress.com/"} variant={"text"}>
-              WordPress.com
-            </Link>
+            My own open source contribution. The tool collects errors from Typescript and makes them available through integrations in Bitbucket and Github
           </Project>
         </div>
       </Stack>

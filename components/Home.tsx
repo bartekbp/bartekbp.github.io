@@ -83,7 +83,7 @@ const Home = (): ReactElement => {
           <SplitWords wordClassName={styles.words}>Hi! I&apos;m Bartek Polnik</SplitWords>
         </TextBody>
         <TextBody variant={"body"} className={styles.text}>
-          <span>A full stack developer passionate about building delightful products for the web. Now at</span>{" "}
+          <span>A full stack developer passionate about building delightful products for the web. At</span>{" "}
           <Link href={"https://genieai.tech/"} variant={"text"}>
             Genie
           </Link>
