@@ -3,12 +3,13 @@
 
 @font-face {
   font-family: "WorkSans";
-  src:  url("/static/fonts/worksans/WorkSans-VariableFont_wght.woff2") format('woff2-variations'),
-        url("/static/fonts/worksans/WorkSans-VariableFont_wght.ttf") format('TrueType-variations');
+  src: url("/static/fonts/worksans/WorkSans-VariableFont_wght.woff2") format('woff2-variations'),
+    url("/static/fonts/worksans/WorkSans-VariableFont_wght.ttf") format('TrueType-variations');
 }
 
 :root {
-  --light-grey: hsl(0deg 0% 95%);
+  --light-grey-values: 0deg 0% 95%;
+  --light-grey: hsl(var(--light-grey-values));
   --dark-grey-values: 0deg 0% 65%;
   --dark-grey: hsl(var(--dark-grey-values));
   --regular-lighter-grey: hsl(0deg 0% 87.5%);
@@ -36,5 +37,5 @@ body {
   background: var(--dark-black);
   color: var(--light-grey);
   font-family: WorkSans, sans-serif;
-  cursor:url("/static/rocket.svg") 0 0, auto;
+  cursor: url("/static/rocket.svg") 0 0, auto;
 }

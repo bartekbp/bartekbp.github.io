@@ -48,7 +48,7 @@ const Contact = () => {
           <Tile className={styles.message}>
             <Stack spacing={"1rem"}>
               <TextBody variant={"body"}>
-                In case you would like to contact me, you can always reach me via{" "}
+                You can always reach me via{" "}
                 <Link
                   variant={"text"}
                   onClick={(e) => {

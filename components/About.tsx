@@ -105,21 +105,19 @@ const About = () => {
           <HLine className={styles.line} />
         </TextBody>
         <Tile className={styles.text}>
-          <Stack spacing={"1rem"}>
+          <Stack spacing={"1.5rem"}>
             <TextBody variant={"body"}>
-              Hello! I&apos;m <TextBody variant={"emph"}>Bartek</TextBody>, a full-stack developer with over a <TextBody variant={"emph"}>decade</TextBody> of experience in the industry
+              Hello! I'm a <TextBody variant={"emph"}>full-stack developer</TextBody> with over a <TextBody variant={"emph"}>decade</TextBody> of experience building all kinds of web solutions.
             </TextBody>
             <TextBody variant={'body'}>
-              I hold a degree in Computer Science from <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"} wrap>AGH University of Science and Technology</Link>, where I
-              developed a strong foundation in building robust solutions across frontend, backend, and devops domains
+              I studied Computer Science at <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"} wrap>AGH University of Science and Technology</Link>, which gave me a solid foundation to work across frontend, backend, and devops.
             </TextBody>
             <TextBody variant={'body'}>
-              Throughout my career, I&apos;ve successfully delivered projects such as portfolio management system, core banking platform, multilingual CMS websites,
-              search engines, and virtual file system.
-              I&apos;ve had the privilege of collaborating with talented teams across startups, marketing agencies, large organizations, and the open-source community
+              Over the years, I've built quite a few interesting projects - from <TextBody variant={"emph"}>portfolio management systems</TextBody>, <TextBody variant={"emph"}>core banking platforms</TextBody>, and <TextBody variant={"emph"}>multilingual websites</TextBody> to <TextBody variant={"emph"}>search engines</TextBody> and <TextBody variant={"emph"}>virtual file systems</TextBody>.
+              I've been lucky to work with great people in all sorts of environments - startups, marketing agencies, larger companies, and open-source communities.
             </TextBody>
             <TextBody variant={'body'}>
-              At <Link href={"https://genieai.tech/"} variant={"text"}>Genie</Link>, I&apos;m focused on developing a system that enhances decision-making for crypto investors
+              At <Link href={"https://genieai.tech/"} variant={"text"}>Genie</Link>, where I'm working on tools to help crypto investors make better decisions.
             </TextBody>
           </Stack>
         </Tile>

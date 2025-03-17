@@ -5,7 +5,7 @@
   padding-top: var(--padding);
   padding-bottom: 30vh;
   background-image: linear-gradient(to bottom, hsla(var(--light-black-values) / var(--transparency)) 35%, hsla(var(--black-values) / var(--transparency))),
-              url("/static/background-pattern.svg");
+    url("/static/background-pattern.svg");
 }
 
 .header {
@@ -20,7 +20,7 @@
 
 .box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .message {

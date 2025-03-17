@@ -80,14 +80,14 @@ const Home = (): ReactElement => {
           <PersonIcon />
         </div>
         <TextBody variant={"h2"} className={styles.title}>
-          <SplitWords wordClassName={styles.words}>Hi! I&apos;m Bartek Polnik</SplitWords>
+          <SplitWords wordClassName={styles.words}>Hey there, I'm Bartek</SplitWords>
         </TextBody>
         <TextBody variant={"body"} className={styles.text}>
-          <span>A full stack developer passionate about building delightful products for the web. At</span>{" "}
+          <span>Building elegant, user-focused web solutions from front to back. At</span>{" "}
           <Link href={"https://genieai.tech/"} variant={"text"}>
             Genie
           </Link>
-          <span>, making robo advisor for crypto investing a reality.</span>
+          <span>, developing the next generation of AI-powered crypto investment tools.</span>
         </TextBody>
         <ScrollIcon className={styles.scrollIcon} startAnimation={completedAnimation} />
       </Stack>
