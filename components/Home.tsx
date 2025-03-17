@@ -80,7 +80,7 @@ const Home = (): ReactElement => {
           <PersonIcon />
         </div>
         <TextBody variant={"h2"} className={styles.title}>
-          <SplitWords wordClassName={styles.words}>Hey there, I'm Bartek</SplitWords>
+          <SplitWords wordClassName={styles.words}>Hey there, I&apos;m Bartek</SplitWords>
         </TextBody>
         <TextBody variant={"body"} className={styles.text}>
           <span>Building elegant, user-focused web solutions from front to back. At</span>{" "}

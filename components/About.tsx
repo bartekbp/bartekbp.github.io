@@ -107,17 +107,17 @@ const About = () => {
         <Tile className={styles.text}>
           <Stack spacing={"1.5rem"}>
             <TextBody variant={"body"}>
-              Hello! I'm a <TextBody variant={"emph"}>full-stack developer</TextBody> with over a <TextBody variant={"emph"}>decade</TextBody> of experience building all kinds of web solutions.
+              Hello! I&apos;m a <TextBody variant={"emph"}>full-stack developer</TextBody> with over a <TextBody variant={"emph"}>decade</TextBody> of experience building all kinds of web solutions.
             </TextBody>
             <TextBody variant={'body'}>
               I studied Computer Science at <Link href={"https://iet.agh.edu.pl/en/"} variant={"text"} wrap>AGH University of Science and Technology</Link>, which gave me a solid foundation to work across frontend, backend, and devops.
             </TextBody>
             <TextBody variant={'body'}>
-              Over the years, I've built quite a few interesting projects - from <TextBody variant={"emph"}>portfolio management systems</TextBody>, <TextBody variant={"emph"}>core banking platforms</TextBody>, and <TextBody variant={"emph"}>multilingual websites</TextBody> to <TextBody variant={"emph"}>search engines</TextBody> and <TextBody variant={"emph"}>virtual file systems</TextBody>.
-              I've been lucky to work with great people in all sorts of environments - startups, marketing agencies, larger companies, and open-source communities.
+              Over the years, I&apos;ve built quite a few interesting projects - from <TextBody variant={"emph"}>portfolio management systems</TextBody>, <TextBody variant={"emph"}>core banking platforms</TextBody>, and <TextBody variant={"emph"}>multilingual websites</TextBody> to <TextBody variant={"emph"}>search engines</TextBody> and <TextBody variant={"emph"}>virtual file systems</TextBody>.
+              I&apos;ve been lucky to work with great people in all sorts of environments - startups, marketing agencies, larger companies, and open-source communities.
             </TextBody>
             <TextBody variant={'body'}>
-              At <Link href={"https://genieai.tech/"} variant={"text"}>Genie</Link>, where I'm working on tools to help crypto investors make better decisions.
+              At <Link href={"https://genieai.tech/"} variant={"text"}>Genie</Link>, where I&apos;m working on tools to help crypto investors make better decisions.
             </TextBody>
           </Stack>
         </Tile>
