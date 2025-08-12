@@ -84,8 +84,8 @@ const Home = (): ReactElement => {
         </TextBody>
         <TextBody variant={"body"} className={styles.text}>
           <span>Building elegant, user-focused web solutions from front to back. At</span>{" "}
-          <Link href={"https://bwinners.com/"} variant={"text"}>
-            Bwinners
+          <Link href={"https://t-soft.io/"} variant={"text"}>
+            T-soft
           </Link>
           <span>, creating innovative betting and gaming experiences.</span>
         </TextBody>
