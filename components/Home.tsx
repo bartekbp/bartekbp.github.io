@@ -84,10 +84,10 @@ const Home = (): ReactElement => {
         </TextBody>
         <TextBody variant={"body"} className={styles.text}>
           <span>Building elegant, user-focused web solutions from front to back. At</span>{" "}
-          <Link href={"https://genieai.tech/"} variant={"text"}>
-            Genie
+          <Link href={"https://bwinners.com/"} variant={"text"}>
+            Bwinners
           </Link>
-          <span>, developing the next generation of AI-powered crypto investment tools.</span>
+          <span>, creating innovative betting and gaming experiences.</span>
         </TextBody>
         <ScrollIcon className={styles.scrollIcon} startAnimation={completedAnimation} />
       </Stack>

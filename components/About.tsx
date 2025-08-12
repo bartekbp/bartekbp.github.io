@@ -117,7 +117,7 @@ const About = () => {
               I&apos;ve been lucky to work with great people in all sorts of environments - startups, marketing agencies, larger companies, and open-source communities.
             </TextBody>
             <TextBody variant={'body'}>
-              At <Link href={"https://genieai.tech/"} variant={"text"}>Genie</Link>, I&apos;m working on tools to help crypto investors make better decisions.
+              I&apos;m passionate about writing clean, maintainable code and staying up-to-date with the latest technologies. When I&apos;m not coding, you&apos;ll find me exploring new frameworks or contributing to open source.
             </TextBody>
           </Stack>
         </Tile>
